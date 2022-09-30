@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: space-between;
     overflow: scroll;
+    box-shadow: -9px 10px 34px -3px rgba(120,120,135,0.75);
+    -webkit-box-shadow: -9px 10px 34px -3px rgba(120,120,135,0.75);
+    -moz-box-shadow: -9px 10px 34px -3px rgba(120,120,135,0.75);
 }
 
 .img-container {
@@ -58,7 +61,7 @@
     color: hsl(238, 29%, 16%);
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 15px 25px;
+    padding: 15px 15px 15px 0;
     background: white;
     border-bottom: 1px solid #edf2f8;
     cursor: pointer;
@@ -108,7 +111,7 @@
     padding: 1em;
     visibility: visible;
     height: auto;
-    padding: 15px 15px 15px 25px;
+    padding: 15px 15px 15px 0;
     font-size: .8em;
     border-bottom: 1px solid #edf2f8;
 }
