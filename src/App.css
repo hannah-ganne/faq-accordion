@@ -44,6 +44,7 @@
 }
 
 .accordion h1 {
+    color: hsl(238, 29%, 16%);
     margin: 0;
     margin-bottom: 1.5em;
 }
@@ -54,6 +55,7 @@
     /* box-shadow: 0 10px 20px -10px #646f74; */
 }
 [data-panel-title] {
+    color: hsl(238, 29%, 16%);
     display: flex;
     justify-content: space-between;
     padding: 15px 15px 15px 25px;
