@@ -19,42 +19,42 @@ function App() {
                 <Accordion>
                     <Section>
                         <Title>
-                            How many team members can I invite?
+                            Can I use libraries/frameworks on these projects?
                         </Title>
                         <Content>
-                            <Description city="paris" />
+                            <Description question="1" />
                         </Content>
                     </Section>
                     <Section>
                         <Title>
-                            What is the maximum file upload size?
+                            How can I get help if I'm stuck on a challenge?
                         </Title>
                         <Content>
-                            <Description city="lech" />
+                            <Description question="2" />
                         </Content>
                     </Section>
                     <Section>
                         <Title>
-                            How do I reset my password?
+                            Can I use these projects in my portfolio?
                         </Title>
                         <Content>
-                            <Description city="paris" />
+                            <Description question="3" />
                         </Content>
                     </Section>
                     <Section>
                         <Title>
-                            Can I cancel my subscription?
+                            Is there an official solution I can take a look at?
                         </Title>
                         <Content>
-                            <Description city="madrid" />
+                            <Description question="4" />
                         </Content>
                     </Section>
                     <Section>
                         <Title>
-                            Do you provide additional support?
+                            Do I get a code review when I post my solution?
                         </Title>
                         <Content>
-                            <Description city="madrid" />
+                            <Description question="5" />
                         </Content>
                     </Section>
                 </Accordion>
