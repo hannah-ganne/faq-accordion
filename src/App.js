@@ -4,14 +4,16 @@ import Section from './components/Section'
 import Content from './components/Content'
 import Title from './components/Title'
 import Description from './components/Description';
-import illustration from './assets/illustration-woman-online-desktop.svg'
+import desktop from './assets/illustration-woman-online-desktop.svg'
+import mobile from './assets/illustration-woman-online-mobile.svg'
 import box from './assets/illustration-box-desktop.svg'
 
 function App() {
     return (
         <div className="container">
             <div className="img-container">
-                <img src={illustration} alt="woman looking at a screen" />
+                <img className="desktop" src={desktop} alt="woman looking at a screen" />
+                <img className="mobile" src={mobile} alt="woman looking at a screen" />
             </div>
             <img id="box" src={box} alt="a red box" />
             <div className="accordion">
