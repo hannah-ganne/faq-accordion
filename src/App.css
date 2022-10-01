@@ -23,17 +23,21 @@
     overflow: hidden;
 }
 
-.img-container img {
+.img-container .desktop {
     object-fit: cover;
     position: absolute;
     top: 4em;
     left: -5em;
 }
 
+.img-container .mobile {
+    visibility: hidden;
+}
+
 #box {
     position: absolute;
     top: 45%;
-    left: 6em;
+    left: 8vw;
 }
 
 .accordion {
@@ -55,7 +59,6 @@
 [data-accordion] {
     margin: 0 auto;
     width: 100%;
-    /* box-shadow: 0 10px 20px -10px #646f74; */
 }
 [data-panel-title] {
     color: hsl(238, 29%, 16%);
@@ -75,10 +78,6 @@
     font-weight: bold;
     color: hsl(14, 88%, 65%);
 }
-
-/* [data-panel-title].expanded {
-    border-bottom: 1px solid #646f74;
-} */
 
 [data-panel-title].expanded {
     font-weight: bold;
@@ -114,4 +113,62 @@
     padding: 15px 15px 15px 0;
     font-size: .8em;
     border-bottom: 1px solid #edf2f8;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    }
+
+    #box {
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 10em 1em 3em 1em;
+    }
+
+    .container {
+        width: 100%;
+        height: 70vh;
+        overflow: visible;
+        border-radius: 1.5em;
+        padding: 2em 1.5em;
+        background: top no-repeat url('./assets/bg-pattern-mobile.svg') #FFFFFF;
+    }
+
+    .accordion {
+        padding: 0;
+        min-height: 80%;
+        height: fit-content;
+        overflow: scroll;
+        font-size: 0.9em;
+    }
+
+    .accordion h1 {
+        text-align: center;
+        margin-bottom: 0.7em;
+    }
+
+    .img-container {
+        height: 500px;
+        overflow: visible;
+    }
+
+    .img-container .desktop {
+        visibility: hidden;
+    }
+
+    .img-container .mobile {
+        width: 250px;
+        visibility: visible;
+        position: absolute;
+        top: -9.3em;
+        left: 0.8em;
+    }
+
 }
